@@ -16,7 +16,7 @@ export function UseAccordionItem() {
 
 export default function AccordionItem({ id, className, children }) {
   return (
-    <AccordionItemContext.Provider>
+    <AccordionItemContext.Provider value={id}>
       <li className={className}>{children}</li>;
     </AccordionItemContext.Provider>
   );
